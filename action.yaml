@@ -1,4 +1,4 @@
-name: OpenAI ChatGPT Code Review
+name: OpenAI ChatGPT AHM Code Review
 description: A GitHub Action that uses OpenAI ChatGPT to review code in pull request.
 inputs:
   PROGRAMMING_LANGUAGE:

@@ -10,7 +10,7 @@ To use this action in your workflow, add the following step:
 
 ```yaml
 name: OpenAI ChatGPT Code Review
-uses: adshao/chatgpt-code-review-action@v0.2
+uses: manjunathsb10/chatgpt-code-review-action@v0.2
 with:
     PROGRAMMING_LANGUAGE: 'JavaScript'
     REVIEW_COMMENT_PREFIX: 'chatgpt:'
@@ -61,10 +61,10 @@ on:
 jobs:
   code-review:
     runs-on: ubuntu-latest
-    if: github.event.comment.user.login == 'adshao' && startsWith(github.event.comment.body, 'chatgpt')
+    if: github.event.comment.user.login == 'manjunathsb10' && startsWith(github.event.comment.body, 'chatgpt')
     steps:
     - name: OpenAI ChatGPT Code Review
-      uses: adshao/chatgpt-code-review-action@v0.2
+      uses: manjunathsb10/chatgpt-code-review-action@v0.2
       with:
         PROGRAMMING_LANGUAGE: 'JavaScript'
         OPENAI_TOKEN: ${{ secrets.OPENAI_TOKEN }}
@@ -110,10 +110,6 @@ ${file:dist/index.js}
 ![demo](https://pbs.twimg.com/media/FqOsplnaMAERrgP?format=jpg&name=large)
 
 ![code_review_for_file](https://pbs.twimg.com/media/FqvwanLaIAAd2l6?format=jpg&name=large)
-
-## More Examples
-
-`go-binance`: https://github.com/adshao/go-binance/pull/461#issuecomment-1452922686
 
 ## License
 

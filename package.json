@@ -20,8 +20,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adshao/chagGPT-code-review-action.git"
+    "url": "https://github.com/manjunathsb10/chagGPT-code-review-action.git"
   },
-  "author": "Adam Shao",
+  "author": "Manjunath Biradar",
   "license": "MIT"
 }
